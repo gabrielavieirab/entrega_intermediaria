@@ -11,3 +11,9 @@ def test_get_characters_success():
     with patch("requests.get", return_value=mock_response):
         res = client.get_characters()
         assert res["results"][0]["name"] == "Rick Sanchez"
+
+
+
+
+
+
